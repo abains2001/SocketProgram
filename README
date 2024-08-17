@@ -1,0 +1,24 @@
+This program is a simple socket program.
+
+Run instructions:
+1) Run TextServer.java to start the server.
+2) Run TextClient.java to start the actual client side program.
+3) Sign in using either example account:
+    Username: Alice
+    Password: 1234
+
+    Username: Bob
+    Password: 5678
+
+
+Program Functions:
+    Connect to the server:
+        Allows the user to sign in with either example account
+    Get the user list:
+        Shows a list of users in the system
+    Send a message:
+        While signed in, allows the user to send a message from one account to another
+    Get my messages:
+        Outputs all messages the user has recieved from other accounts
+    Exit:
+        Ends the program

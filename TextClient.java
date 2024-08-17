@@ -10,9 +10,9 @@ public class TextClient {
 
     public static void main(String[] args) {
         try (Socket socket = new Socket(SERVER_ADDRESS, SERVER_PORT);
-             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-             Scanner scanner = new Scanner(System.in)) {
+                PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+                BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+                Scanner scanner = new Scanner(System.in)) {
 
             while (true) {
                 System.out.println("\n[[[[[[[[Main Menu]]]]]]]]");
@@ -23,7 +23,7 @@ public class TextClient {
                 System.out.println("4. Exit");
                 System.out.print("Enter a menu option via number 0-4: ");
                 int option = scanner.nextInt();
-                scanner.nextLine(); 
+                scanner.nextLine();
                 System.out.println();
                 switch (option) {
                     case 0 -> {
@@ -53,7 +53,7 @@ public class TextClient {
                     case 4 -> {
                         out.println("EXIT:");
                         System.out.println(in.readLine());
-                        return; 
+                        return;
                     }
                 }
             }
@@ -62,4 +62,3 @@ public class TextClient {
         }
     }
 }
-
